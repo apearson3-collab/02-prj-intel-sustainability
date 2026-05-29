@@ -1,9 +1,59 @@
 /* Add your CSS here */
 body {
-  background-color: lightblue;
+  background-color: #000f28;
   text-align: center;
+  color: rgb(218, 218, 218);
 }
 
 img {
-    max-width: 300px;
+    max-width: 200px;
+}
+
+section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  height: 70%;
+  overflow: auto;
+}
+
+.card {
+  display: inline-block;
+  background: #001842;
+  width: 220px;
+  height: 220px;
+  margin: 0.625rem;
+  position: relative;
+}
+
+.card p {
+  visibility: hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  margin: 16px;
+}
+
+.card:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card:hover :is(h2, h3, img) {
+  opacity: 0.3;
+}
+
+h2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+img {
+  max-width: 200px;
+  max-height: 128px;
 }
