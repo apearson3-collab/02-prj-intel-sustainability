@@ -10,9 +10,9 @@ img {
 }
 
 section {
+  justify-content: center;
   display: inline-flex;
   flex-wrap: wrap;
-  max-width: 1000px;
   height: 70%;
   overflow: auto;
 }
@@ -20,10 +20,19 @@ section {
 .card {
   display: inline-block;
   background: #001842;
+  color: rgb(218, 218, 218);
   width: 220px;
-  height: 220px;
+  height: 230px;
   margin: 0.625rem;
   position: relative;
+}
+
+.card h2 {
+  font-size: 1.5em;
+}
+
+.card h3 {
+  font-size: 1.17em;
 }
 
 .card p {
@@ -43,7 +52,7 @@ section {
   opacity: 0.3;
 }
 
-h2 {
+.cardHeader {
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -56,4 +65,14 @@ h3 {
 img {
   max-width: 200px;
   max-height: 128px;
+}
+
+.sectionheader {
+  margin-top: 40px;
+}
+
+@media (min-width: 769px) {
+    .columns {
+      display: inline-flex;
+    }
 }
