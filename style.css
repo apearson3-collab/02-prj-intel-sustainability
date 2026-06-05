@@ -10,23 +10,41 @@ img {
 }
 
 section {
+  justify-content: center;
   display: inline-flex;
   flex-wrap: wrap;
-  max-width: 1000px;
   height: 70%;
   overflow: auto;
 }
 
-.card {
+.mycard {
   display: inline-block;
   background: #001842;
+  color: rgb(218, 218, 218);
   width: 220px;
-  height: 220px;
+  height: 230px;
   margin: 0.625rem;
   position: relative;
 }
 
-.card p {
+.card {
+  background: #001842;
+  color: rgb(218, 218, 218);
+}
+
+.card-footer {
+  background-color: #000f28;
+}
+
+.mycard h2 {
+  font-size: 1.5em;
+}
+
+.mycard h3 {
+  font-size: 1.17em;
+}
+
+.mycard p {
   visibility: hidden;
   position: absolute;
   top:0;
@@ -34,16 +52,16 @@ section {
   margin: 16px;
 }
 
-.card:hover p {
+.mycard:hover p {
   visibility: visible;
   opacity: 1;
 }
 
-.card:hover :is(h2, h3, img) {
+.mycard:hover :is(h2, h3, img) {
   opacity: 0.3;
 }
 
-h2 {
+.mycardHeader {
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -56,4 +74,18 @@ h3 {
 img {
   max-width: 200px;
   max-height: 128px;
+}
+
+.sectionheader {
+  margin-top: 40px;
+}
+
+.columns {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+    .columns {
+      display: inline-flex;
+    }
 }

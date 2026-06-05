@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -31,8 +33,8 @@
   <section>
 
     <!-- Card 1: 1968 -->
-    <div class="card">
-      <h2>1968</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">1968</h2>
       <h3>Intel Founded</h3>
       <img src="img/intel_building.jpg" alt="intel's building"/>
       <p>
@@ -43,8 +45,8 @@
     </div>
 
     <!-- Card 2: 1971 -->
-    <div class="card">
-      <h2>1971</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">1971</h2>
       <h3>First Microprocessor</h3>
       <img src="img/intel_first_micro.jpg" alt="intel's first microprocessor"/>
       <p>
@@ -55,8 +57,8 @@
     </div>
 
     <!-- Card 3: 1978 -->
-    <div class="card">
-      <h2>1978</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">1978</h2>
       <h3>8086 Processor</h3>
       <img src="img/intel_8086.jpg" alt="intel's 8086 processor"/>
       <p>
@@ -66,8 +68,8 @@
     </div>
 
     <!-- Card 4: 1985 -->
-    <div class="card">
-      <h2>1985</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">1985</h2>
       <h3>386 Processor</h3>
       <img src="img/intel_386.jpg" alt="intel's 386 processor"/>
       <p>
@@ -78,8 +80,8 @@
     </div>
 
     <!-- Card 5: 2006 -->
-    <div class="card">
-      <h2>2006</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">2006</h2>
       <h3>Peak GHG Emissions</h3>
       <!-- Add image -->
       <p>
@@ -91,8 +93,8 @@
     </div>
 
     <!-- Card 6: 2020 -->
-    <div class="card">
-      <h2>2020</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">2020</h2>
       <h3>RISE Strategy</h3>
       <!-- Add image -->
       <p>
@@ -103,8 +105,8 @@
     </div>
 
     <!-- Card 7: 2022 -->
-    <div class="card">
-      <h2>2022</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">2022</h2>
       <h3>Net-Zero By 2040</h3>
       <!-- Add image -->
       <p>
@@ -115,8 +117,8 @@
     </div>
 
     <!-- Card 8: 2023 -->
-    <div class="card">
-      <h2>2023</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">2023</h2>
       <h3>Renewable Electricity</h3>
       <!-- Add image -->
       <p>
@@ -127,8 +129,8 @@
     </div>
 
     <!-- Card 9: 2024 -->
-    <div class="card">
-      <h2>2024</h2>
+    <div class="mycard">
+      <h2 class="cardHeader">2024</h2>
       <h3>Sustainability Summit</h3>
       <!-- Add image -->
       <p>
@@ -138,6 +140,72 @@
       </p>
     </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  <!-- 3-Column Content Section -->
+  <section>
+    <div class="columns">
+      
+      <!-- Column 1 -->
+      <div>
+        <h2 class="sectionheader">RISE Strategy</h2>
+        <p>
+          Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
+          Intel sets ambitious 2030 goals, including driving industry-wide 
+          progress on climate action, water stewardship, and waste reduction.
+        </p>
+        <!-- Learn More Button -->
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h2 class="sectionheader">Commitment</h2>
+        <p>
+          In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
+          (Scope 1 and 2) by 2040. This commitment builds on decades of 
+          environmental initiatives and partnerships across the semiconductor 
+          industry.
+        </p>
+        <!-- Learn More Button -->
+        <a href="#">Learn More</a>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h2 class="sectionheader">Water &amp; Waste</h2>
+        <p>
+          Intel conserves billions of gallons of water annually and 
+          collaborates with local communities to restore watersheds.
+          Intel also upcycles and recycles materials to reduce waste and 
+          advance a circular economy.
+        </p>
+        <!-- Learn More Button -->
+        <a href="#">Learn More</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- Subscription Form -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="sectionheader">Subscribe to our Newsletter</h2>
+      <form>
+        <div class="row mb-3 mx-auto p-2" style="width: 365px;">
+            <div class="col-auto">
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="your email here">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
